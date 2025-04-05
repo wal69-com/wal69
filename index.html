@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: #35424a;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #e8491d;
+            padding: 0.5rem 0;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 1rem;
+        }
+        
+        nav a:hover {
+            font-weight: bold;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 2rem 0;
+        }
+        
+        .showcase {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .showcase h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .boxes {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .box {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media(max-width: 768px) {
+            .boxes {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <section class="showcase">
+        <h1>Your Heading Here</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+    </section>
+    
+    <div class="container">
+        <section class="boxes">
+            <div class="box">
+                <h3>Feature One</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            </div>
+            <div class="box">
+                <h3>Feature Two</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            </div>
+            <div class="box">
+                <h3>Feature Three</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>My Website &copy; 2023</p>
+    </footer>
+</body>
+</html>
